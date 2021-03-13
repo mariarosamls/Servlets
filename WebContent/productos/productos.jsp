@@ -74,24 +74,29 @@
 						<label>IdProveedor</label>
 						<input type="text" name="idproveedor" class="form-control">
 					</div>
-					<input type="button" value="Guardar" class="btn  btn-primary" onclick="guardar();">
-					<input type="button" value="Actualizar" class="btn  btn-default" onclick="actualizar();">
-					<input type="button" value="Eliminar" class="btn  btn-success" onclick="eliminar();">					
+					<div class="text-center">
+					<input type="button" value="Guardar" class="btn  btn-primary btn-lg" onclick="guardar();">
+					<input type="button" value="Actualizar" class="btn  btn-success btn-lg" onclick="actualizar();">
+					<input type="button" value="Eliminar" class="btn  btn-danger btn-lg" onclick="eliminar();">					
+					</div>
 				</form>
 				<!--  Crea una tabla -->
-				<table class="table table-condensed">
+				<table class="table table-hover">
+					<thead class="thead-dark">
 					<tr>
-						<!--  crea la cabecera de la tabla  -->
-						<th>IdProducto</th>
-						<th>Producto</th>
-						<th>Grupo</th>	
-						<th>Proveedor</th>
-						<th>Observaciones</th>
-						<th>IdProveedor</th>											
+						
+						<th scope="col">IdProducto</th>
+						<th scope="col">Producto</th>
+						<th scope="col">Grupo</th>	
+						<th scope="col">Proveedor</th>
+						<th scope="col">Observaciones</th>
+						<th scope="col">IdProveedor</th>
+																	
 					</tr>
+					</thead>
 					<%
 						
-						List<VOLogin> lista = (List<VOLogin>)session.getAttribute("listaProducto");
+						List<VOLogin> lista = (List<VOLogin>)session.getAttribute("listaUsuario");
 						for (VOLogin obj: lista){							
 					%>
 					  

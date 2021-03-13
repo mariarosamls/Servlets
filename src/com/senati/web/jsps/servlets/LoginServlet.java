@@ -64,7 +64,7 @@ public class LoginServlet extends HttpServlet {
 			session.setAttribute("usuarioLogueado",vo);
 			//Devolviendo lista
 			session.setAttribute("listaUsuario", lista);
-			request.getRequestDispatcher("bienvenida.jsp").forward(request,response);
+			request.getRequestDispatcher("formulario.jsp").forward(request,response);
 		}else{
 			System.out.println("No tiene acceso");
 			//response.sendRedirect("login.html");

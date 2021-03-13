@@ -3,11 +3,10 @@ package com.senati.web.jsps.servlets.vo;
 import java.io.Serializable;
 
 public class VOLogin implements Serializable {
-
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 8534279428991240817L;
+	private static final long serialVersionUID = -5053213217164054779L;
 	private String usuario;
 	private String clave;
 	private String idproducto;
@@ -16,6 +15,7 @@ public class VOLogin implements Serializable {
 	private String proveedor;
 	private String observaciones;
 	private String idproveedor;
+	
 	public String getUsuario() {
 		return usuario;
 	}
